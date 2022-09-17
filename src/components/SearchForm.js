@@ -15,15 +15,12 @@ export const SearchForm = ({ handleOnSubmit }) => {
   };
 
   return (
-    <div className="mt-5 text-center">
-      <h1>Contact List</h1>
+    <div className="head">
+      <h1 clasName="text-center header">Contact List</h1>
       <Form className="mt-3" onSubmit={sub}>
         <Row>
           <Col>
-            <Form.Control
-              placeholder="Contact name"
-              onChange={handleOnChange}
-            />
+            <Form.Control placeholder="User Name?" onChange={handleOnChange} />
           </Col>
           <Col>
             <Button type="submit" variant="primary">
