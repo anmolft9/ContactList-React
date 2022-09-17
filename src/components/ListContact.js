@@ -8,7 +8,7 @@ export const ListContact = ({ contact }) => {
         <div className="m-5">
           {contact.map((item) => {
             return (
-              <Card border="info" style={{ width: "70rem" }}>
+              <Card border="warning" style={{ width: "70rem" }}>
                 <Card.Header className="text-center">
                   User Name : {item.username}
                 </Card.Header>
@@ -16,9 +16,13 @@ export const ListContact = ({ contact }) => {
                   <Card.Title>Name: {item.name} </Card.Title>
                   <Card.Text>
                     <ListGroup>
-                      <ListGroup.Item>Email: {item.email}</ListGroup.Item>
-                      <ListGroup.Item>Phone: {item.phone} </ListGroup.Item>
-                      <ListGroup.Item>
+                      <ListGroup.Item variant="info">
+                        Email: {item.email}
+                      </ListGroup.Item>
+                      <ListGroup.Item variant="primary">
+                        Phone: {item.phone}{" "}
+                      </ListGroup.Item>
+                      <ListGroup.Item variant="success">
                         Address: {item.address.suite} {item.address.street}{" "}
                         {item.address.city} {item.address.zipcode}
                       </ListGroup.Item>
