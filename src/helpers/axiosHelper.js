@@ -8,3 +8,10 @@ export const fetchContact = async (str) => {
 
   return data;
 };
+
+export const fetchAllContacts = async () => {
+  const url = apiEndPoint;
+  const { data } = await axios.get(url);
+
+  return data;
+};

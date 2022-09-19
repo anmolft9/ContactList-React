@@ -17,7 +17,7 @@ export const SearchForm = ({ handleOnSubmit }) => {
   return (
     <div className="head">
       <h1 clasName="text-center header">Contact List</h1>
-      <Form className="mt-3" onSubmit={sub}>
+      <Form className="mt-5" onSubmit={sub}>
         <Row>
           <Col>
             <Form.Control placeholder="User Name?" onChange={handleOnChange} />
